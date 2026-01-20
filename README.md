@@ -1,0 +1,112 @@
+# 🎙️ Hey Buddy – AI English Language Coach
+
+**Hey Buddy** is an AI-powered English learning companion designed to help users improve their spoken and written English through natural conversations, real-time feedback, and friendly guidance.
+
+The project focuses on creating a comfortable, human-like conversational experience for learners who prefer a mix of English and Bangla (Banglish) explanations.
+
+---
+
+## ✨ Features
+
+### 🗣️ Conversational English Practice
+- Natural, flowing conversations in English  
+- Banglish explanations when clarification is needed  
+- Adaptive language level based on user progress  
+
+### 🧠 Real-Time Language Coaching
+- Responds like a normal conversation partner  
+- Gently points out grammar or vocabulary mistakes  
+- Provides simple, easy-to-understand corrections  
+
+### 🤝 Friendly & Supportive Interaction
+- Warm, casual, and empathetic tone  
+- Designed to feel like talking to a close friend  
+- Encourages confidence and consistency in practice  
+
+### 🎙️ Voice & Text Support
+- Optimized for voice-based interaction  
+- Supports both text and audio conversations  
+
+---
+
+## 🧑‍💻 AI Behavior Design
+
+The AI follows a carefully designed system instruction that defines:
+
+- A friendly English coach persona  
+- Clear correction logic with a dedicated feedback section  
+- Balanced use of English and Banglish  
+- A conversational, non-judgmental interaction style  
+
+This makes learning English feel natural, engaging, and stress-free.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React + TypeScript  
+- **AI Model:** Google Gemini API  
+- **Audio Processing:** Gemini Audio APIs  
+- **State Management:** React Context API  
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/hey-buddy-ai-coach.git
+cd hey-buddy-ai-coach
+```
+
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
+
+### 3️⃣ Environment Variables
+Create a `.env` file in the root directory:
+
+```env
+VITE_GEMINI_API_KEY=your_api_key_here
+```
+
+### 4️⃣ Run the App
+```bash
+npm run dev
+```
+
+---
+
+## 🌍 Deployment
+
+The project is ready to be deployed on platforms such as:
+
+- Vercel  
+- Netlify  
+- GitHub Pages  
+
+Make sure to configure environment variables on the hosting platform.
+
+---
+
+## 📌 Use Case
+
+This project is suitable for:
+- English language learners  
+- Conversational AI experiments  
+- Voice-based AI applications  
+- Personal learning or portfolio projects  
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.  
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## ⭐ Support
+
+If you find this project helpful, consider giving it a ⭐ on GitHub!

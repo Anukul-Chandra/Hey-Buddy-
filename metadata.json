@@ -1,0 +1,7 @@
+{
+  "name": "Hey Buddy - Banglish English Coach",
+  "description": "A warm, empathetic Bengali-English language companion that provides real-time coaching and unfiltered conversations.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
