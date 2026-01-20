@@ -1,0 +1,18 @@
+{
+    "sourceFile": "tsconfig.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1768925141140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1768925141140,
+            "name": "Commit-0",
+            "content": "{\n  \"compilerOptions\": {\n    \"target\": \"ES2022\",\n    \"lib\": [\"ES2022\", \"DOM\", \"DOM.Iterable\"],\n    \"module\": \"ESNext\",\n    \"moduleResolution\": \"bundler\",\n    \"useDefineForClassFields\": false,\n    \"experimentalDecorators\": true,\n\n    \"jsx\": \"react-jsx\",\n\n    \"allowJs\": true,\n    \"isolatedModules\": true,\n    \"moduleDetection\": \"force\",\n    \"allowImportingTsExtensions\": true,\n    \"resolveJsonModule\": true,\n\n    \"skipLibCheck\": true,\n    \"noEmit\": true,\n    \"types\": [\"node\"],\n\n    \"baseUrl\": \".\",\n    \"paths\": {\n      \"@/*\": [\"./*\"]\n    }\n  },\n\n  \"include\": [\"**/*.ts\", \"**/*.tsx\"],\n\n  \"exclude\": [\"node_modules\", \"dist\"]\n}\n"
+        }
+    ]
+}
