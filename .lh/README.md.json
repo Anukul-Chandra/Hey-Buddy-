@@ -1,0 +1,22 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1768923113828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1768923249937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,13 +79,12 @@\n ---\n \n ## 🌍 Deployment\n \n-The project is ready to be deployed on platforms such as:\n+The project is ready to be deployed on Vercel such as:\n \n-- Vercel  \n-- Netlify  \n-- GitHub Pages  \n+## You Can test this on :\n+# https://hey-buddy-two.vercel.app/\n \n Make sure to configure environment variables on the hosting platform.\n \n ---\n"
+                }
+            ],
+            "date": 1768923113828,
+            "name": "Commit-0",
+            "content": "# 🎙️ Hey Buddy – AI English Language Coach\n\n**Hey Buddy** is an AI-powered English learning companion designed to help users improve their spoken and written English through natural conversations, real-time feedback, and friendly guidance.\n\nThe project focuses on creating a comfortable, human-like conversational experience for learners who prefer a mix of English and Bangla (Banglish) explanations.\n\n---\n\n## ✨ Features\n\n### 🗣️ Conversational English Practice\n- Natural, flowing conversations in English  \n- Banglish explanations when clarification is needed  \n- Adaptive language level based on user progress  \n\n### 🧠 Real-Time Language Coaching\n- Responds like a normal conversation partner  \n- Gently points out grammar or vocabulary mistakes  \n- Provides simple, easy-to-understand corrections  \n\n### 🤝 Friendly & Supportive Interaction\n- Warm, casual, and empathetic tone  \n- Designed to feel like talking to a close friend  \n- Encourages confidence and consistency in practice  \n\n### 🎙️ Voice & Text Support\n- Optimized for voice-based interaction  \n- Supports both text and audio conversations  \n\n---\n\n## 🧑‍💻 AI Behavior Design\n\nThe AI follows a carefully designed system instruction that defines:\n\n- A friendly English coach persona  \n- Clear correction logic with a dedicated feedback section  \n- Balanced use of English and Banglish  \n- A conversational, non-judgmental interaction style  \n\nThis makes learning English feel natural, engaging, and stress-free.\n\n---\n\n## 🛠️ Tech Stack\n\n- **Frontend:** React + TypeScript  \n- **AI Model:** Google Gemini API  \n- **Audio Processing:** Gemini Audio APIs  \n- **State Management:** React Context API  \n\n---\n\n## 🚀 Getting Started\n\n### 1️⃣ Clone the Repository\n```bash\ngit clone https://github.com/your-username/hey-buddy-ai-coach.git\ncd hey-buddy-ai-coach\n```\n\n### 2️⃣ Install Dependencies\n```bash\nnpm install\n```\n\n### 3️⃣ Environment Variables\nCreate a `.env` file in the root directory:\n\n```env\nVITE_GEMINI_API_KEY=your_api_key_here\n```\n\n### 4️⃣ Run the App\n```bash\nnpm run dev\n```\n\n---\n\n## 🌍 Deployment\n\nThe project is ready to be deployed on platforms such as:\n\n- Vercel  \n- Netlify  \n- GitHub Pages  \n\nMake sure to configure environment variables on the hosting platform.\n\n---\n\n## 📌 Use Case\n\nThis project is suitable for:\n- English language learners  \n- Conversational AI experiments  \n- Voice-based AI applications  \n- Personal learning or portfolio projects  \n\n---\n\n## 🤝 Contributing\n\nContributions, suggestions, and improvements are welcome.  \nFeel free to fork the repository and submit a pull request.\n\n---\n\n## ⭐ Support\n\nIf you find this project helpful, consider giving it a ⭐ on GitHub!\n"
+        }
+    ]
+}
