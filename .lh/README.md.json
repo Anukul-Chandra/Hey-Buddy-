@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1768923113828,
@@ -12,6 +12,14 @@
                 {
                     "date": 1768923249937,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,13 +79,12 @@\n ---\n \n ## 🌍 Deployment\n \n-The project is ready to be deployed on platforms such as:\n+The project is ready to be deployed on Vercel such as:\n \n-- Vercel  \n-- Netlify  \n-- GitHub Pages  \n+## You Can test this on :\n+# https://hey-buddy-two.vercel.app/\n \n Make sure to configure environment variables on the hosting platform.\n \n ---\n"
+                },
+                {
+                    "date": 1768923436971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,10 @@\n \n The project focuses on creating a comfortable, human-like conversational experience for learners who prefer a mix of English and Bangla (Banglish) explanations.\n \n ---\n+## You Can test this on :\n+# https://hey-buddy-two.vercel.app/\n \n ## ✨ Features\n \n ### 🗣️ Conversational English Practice\n@@ -79,13 +81,12 @@\n ---\n \n ## 🌍 Deployment\n \n-The project is ready to be deployed on Vercel such as:\n+The project is ready to be deployed on Vercel.\n \n-## You Can test this on :\n-# https://hey-buddy-two.vercel.app/\n \n+\n Make sure to configure environment variables on the hosting platform.\n \n ---\n \n"
+                },
+                {
+                    "date": 1768923545206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,14 @@\n \n The project focuses on creating a comfortable, human-like conversational experience for learners who prefer a mix of English and Bangla (Banglish) explanations.\n \n ---\n+\n ## You Can test this on :\n-# https://hey-buddy-two.vercel.app/\n+# [Hey Buddy 🎙️](https://hey-buddy-two.vercel.app/)\n \n+---\n+\n ## ✨ Features\n \n ### 🗣️ Conversational English Practice\n - Natural, flowing conversations in English  \n"
                 }
             ],
             "date": 1768923113828,
