@@ -46,7 +46,7 @@ const App: React.FC = () => {
       streamRef.current = await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, sampleRate: 16000 } });
 
       const session = await ai.live.connect({
-        model: 'gemini-2.0-flash-lite-preview-02-05', // আপনার লিস্টের সবচেয়ে স্ট্যাবল মডেল
+        model: 'gemini-2.0-flash-exp', // আপনার লিস্টের সবচেয়ে স্ট্যাবল মডেল
         callbacks: {
           onopen: () => {
             setIsConnected(true); setIsProcessing(false);
