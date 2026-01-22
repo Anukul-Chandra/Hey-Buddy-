@@ -1,0 +1,18 @@
+{
+    "sourceFile": "backend/check_models.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1769101096215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1769101096215,
+            "name": "Commit-0",
+            "content": "import dotenv from \"dotenv\";\nimport fetch from \"node-fetch\"; // যদি এটি না থাকে, বিল্ট-ইন fetch ব্যবহার হবে (Node 18+)\n\ndotenv.config();\n\nconst API_KEY = process.env.GEMINI_API_KEY;\nconst URL = `https://generativelanguage.googleapis.com/v1beta/models?key=${API_KEY}`;\n\nconsole.log(\"🔍 Checking available models for your API Key...\");\n\nasync function listModels() {\n  try {\n    const response = await fetch(URL);\n    const data = await response.json();\n\n    if (data.error) {\n        console.error(\"❌ Google API Error:\", data.error.message);\n    } else {\n        console.log(\"✅ Available Models for YOU:\");\n        // আমরা শুধু মডেলের নামগুলো প্রিন্ট করব\n        const validModels = data.models.filter(m => m.supportedGenerationMethods.includes(\"generateContent\"));\n        validModels.forEach(m => console.log(`👉 ${m.name.replace(\"models/\", \"\")}`));\n    }\n  } catch (error) {\n    console.error(\"🔥 Network Error:\", error.message);\n  }\n}\n\nlistModels();"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "backend/test_ai.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1769101532309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1769101532309,
+            "name": "Commit-0",
+            "content": "import dotenv from \"dotenv\";\nimport { GoogleGenerativeAI } from \"@google/generative-ai\";\n\ndotenv.config();\n\nconst apiKey = process.env.GEMINI_API_KEY;\n\nif (!apiKey) {\n  console.error(\"❌ API Key Missing! .env file check korun.\");\n  process.exit(1);\n}\n\nconst genAI = new GoogleGenerativeAI(apiKey);\n\n// আপনার লিস্টে এই মডেলটি আছে, তাই এটি কাজ করবেই\nconst model = genAI.getGenerativeModel({ model: \"gemini-2.0-flash\" });\n\nasync function run() {\n  console.log(\"Thinking... (Please wait)\");\n  try {\n    const result = await model.generateContent(\"Hello Gemini, are you working?\");\n    const response = await result.response;\n    const text = response.text();\n    console.log(\"✅ SUCCESS! AI says:\");\n    console.log(text);\n  } catch (error) {\n    console.error(\"❌ FAILED. Error details:\");\n    console.log(error);\n  }\n}\n\nrun();"
+        }
+    ]
+}

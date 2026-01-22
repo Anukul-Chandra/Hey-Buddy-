@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1768931332494,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1769098079499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,9 @@\n {\n-  \"name\": \"backend\",\n-  \"version\": \"1.0.0\",\n   \"type\": \"module\",\n-  \"main\": \"server.js\",\n-  \"scripts\": {\n-    \"start\": \"node server.js\"\n-  },\n   \"dependencies\": {\n+    \"express\": \"^4.19.2\",\n     \"cors\": \"^2.8.5\",\n     \"dotenv\": \"^16.4.5\",\n-    \"express\": \"^4.19.2\",\n-    \"@google/genai\": \"^0.3.0\"\n+    \"@google/generative-ai\": \"^0.17.0\"\n   }\n }\n"
+                },
+                {
+                    "date": 1769098731680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n {\n-  \"type\": \"module\",\n+  \"name\": \"backend\",\n+  \"version\": \"1.0.0\",\n+  \"type\": \"module\",  \n+  \"main\": \"server.js\",\n   \"dependencies\": {\n-    \"express\": \"^4.19.2\",\n     \"cors\": \"^2.8.5\",\n     \"dotenv\": \"^16.4.5\",\n-    \"@google/generative-ai\": \"^0.17.0\"\n+    \"express\": \"^4.19.2\",\n+    \"@google/generative-ai\": \"^0.11.0\"\n   }\n-}\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1768931332494,

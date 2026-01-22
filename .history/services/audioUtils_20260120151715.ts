@@ -1,3 +1,4 @@
+
 export function encode(bytes: Uint8Array): string {
   let binary = '';
   const len = bytes.byteLength;

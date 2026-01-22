@@ -1,0 +1,18 @@
+{
+    "sourceFile": "services/audioUtils.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1769104644742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1769104644742,
+            "name": "Commit-0",
+            "content": "export function encode(bytes: Uint8Array): string {\n  let binary = '';\n  const len = bytes.byteLength;\n  for (let i = 0; i < len; i++) {\n    binary += String.fromCharCode(bytes[i]);\n  }\n  return btoa(binary);\n}\n\nexport function decode(base64: string): Uint8Array {\n  const binaryString = atob(base64);\n  const len = binaryString.length;\n  const bytes = new Uint8Array(len);\n  for (let i = 0; i < len; i++) {\n    bytes[i] = binaryString.charCodeAt(i);\n  }\n  return bytes;\n}\n\nexport async function decodeAudioData(\n  data: Uint8Array,\n  ctx: AudioContext,\n  sampleRate: number,\n  numChannels: number,\n): Promise<AudioBuffer> {\n  const dataInt16 = new Int16Array(data.buffer);\n  const frameCount = dataInt16.length / numChannels;\n  const buffer = ctx.createBuffer(numChannels, frameCount, sampleRate);\n\n  for (let channel = 0; channel < numChannels; channel++) {\n    const channelData = buffer.getChannelData(channel);\n    for (let i = 0; i < frameCount; i++) {\n      channelData[i] = dataInt16[i * numChannels + channel] / 32768.0;\n    }\n  }\n  return buffer;\n}\n\nexport function createPcmBlob(data: Float32Array): { data: string; mimeType: string } {\n  const l = data.length;\n  const int16 = new Int16Array(l);\n  for (let i = 0; i < l; i++) {\n    int16[i] = data[i] * 32768;\n  }\n  return {\n    data: encode(new Uint8Array(int16.buffer)),\n    mimeType: 'audio/pcm;rate=16000',\n  };\n}"
+        }
+    ]
+}
